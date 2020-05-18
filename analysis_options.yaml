@@ -1,0 +1,14 @@
+
+
+include: package:lint/analysis_options.yaml
+
+
+linter:
+  rules:
+    unnecessary_statements: true
+
+analyzer:
+  errors:
+    missing_required_param: error
+    unnecessary_statements: warning
+    missing_return: error
