@@ -18,4 +18,14 @@ class LocalizedText {
   static const setUpPIN = "setUpPIN";
   static const showPin = "showPin";
   static const tryNotToUseIdentical = "tryNotToUseIdentical";
+  static const welcomeBack = "welcomeBack";
+  static const insertYourPIN = "insertYourPIN";
+  static const forgotPIN = "forgotPIN";
+  static const reset = "reset";
+  static const login = "login";
+  static const notYou = "notYou";
+  static const switchAccount = "switchAccount";
+  static const touchYourFingerprintSensor = "touchYourFingerprintSensor";
+  static const usePinCode = "usePinCode";
+  static const useFingerprintToAuthenticate = "useFingerprintToAuthenticate";
 }

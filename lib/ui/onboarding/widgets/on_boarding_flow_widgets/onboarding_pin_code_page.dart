@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../localization/localization_key.dart';
 import '../../../../style/colors.dart';
 
-import 'pin_code_input.dart';
+import '../../../shared/pin_code_input.dart';
 
 class OnboardingPinCodePage extends StatelessWidget {
   @override

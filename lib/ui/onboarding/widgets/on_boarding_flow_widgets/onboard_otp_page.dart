@@ -3,7 +3,7 @@ import 'package:pinput/pin_put/pin_put.dart';
 import 'package:topbeta/localization/localization_key.dart';
 import 'package:topbeta/style/colors.dart';
 
-import 'pin_code_input.dart';
+import '../../../shared/pin_code_input.dart';
 
 class OnboardingOtpPage extends StatelessWidget {
   @override

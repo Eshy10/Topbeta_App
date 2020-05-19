@@ -3,11 +3,12 @@ import 'package:provider/provider.dart';
 import 'package:topbeta/localization/localization_key.dart';
 import 'package:topbeta/main.dart';
 import 'package:topbeta/ui/onboarding/widgets/on_boarding_flow_widgets/onboarding_page_view.dart';
+import 'package:topbeta/utils/constants.dart';
 
 import 'notifiers/onboarding_page_index_provider.dart';
 import 'widgets/on_boarding_flow_widgets/next_or_done_button.dart';
 import 'widgets/on_boarding_flow_widgets/onboarding_progress_indicator.dart';
-import 'widgets/on_boarding_flow_widgets/topbeta_text_logo.dart';
+import '../shared/topbeta_text_logo.dart';
 
 class OnBoardingFlow extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class OnBoardingFlow extends StatelessWidget {
       child: Builder(builder: (context) {
         return Scaffold(
           body: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: horizontalPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -39,7 +40,7 @@ class OnBoardingFlow extends StatelessWidget {
                 ),
                 NextOrDoneButton(),
                 const SizedBox(
-                  height: 100,
+                  height: buttonBottomSpace,
                 ),
               ],
             ),

@@ -17,5 +17,15 @@
   "pinIsRequiredToSign": "PIN is required to sign in for security purpose.",
   "setUpPIN": "Set up PIN",
   "showPin": "Show Pin",
-  "tryNotToUseIdentical": "Try not to use identical or sequential numbers for safer PIN"
+  "tryNotToUseIdentical": "Try not to use identical or sequential numbers for safer PIN",
+  "welcomeBack": "Welcome Back ",
+  "insertYourPIN": "Insert Your PIN",
+  "forgotPIN": "Forgot PIN?",
+  "reset": "Reset",
+  "login": "Login",
+  "notYou": "Not You?",
+  "switchAccount": "Switch Account",
+  "useFingerprintToAuthenticate": "Use fingerprint to authenticate",
+  "touchYourFingerprintSensor": "Touch your fingerprint sensor",
+  "usePinCode": "USE PIN CODE"
 }

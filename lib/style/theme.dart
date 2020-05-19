@@ -92,6 +92,11 @@ TextTheme _buildTextTheme(TextTheme base) {
             fontWeight: FontWeight.w500,
             fontSize: 16,
           ),
+          bodyText2: base.bodyText2.copyWith(
+            fontStyle: FontStyle.normal,
+            fontWeight: FontWeight.w500,
+            fontSize: 15,
+          ),
           button: base.button.copyWith(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w800,

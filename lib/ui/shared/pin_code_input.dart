@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pin_put/pin_put.dart';
-import '../../../../style/colors.dart';
+import '../../style/colors.dart';
 
 class PinCodeInput extends StatelessWidget {
   @override
