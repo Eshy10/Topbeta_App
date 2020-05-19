@@ -12,3 +12,4 @@ analyzer:
     missing_required_param: error
     unnecessary_statements: warning
     missing_return: error
+    constant_identifier_names: ignore
