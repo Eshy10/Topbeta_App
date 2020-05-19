@@ -15,7 +15,13 @@ ThemeData _topbetaTheme() {
       primaryColor: primaryColor,
       splashFactory: InkRipple.splashFactory,
       disabledColor: disabledColor,
+      backgroundColor: backgroundColor,
       scaffoldBackgroundColor: scaffoldBackgroundColor,
+      bottomSheetTheme: const BottomSheetThemeData(
+        elevation: 12,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(top: Radius.circular(50))),
+      ),
       buttonTheme: ButtonThemeData(
           height: 48,
           minWidth: 306,

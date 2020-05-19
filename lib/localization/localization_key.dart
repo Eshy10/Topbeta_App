@@ -27,5 +27,9 @@ class LocalizedText {
   static const switchAccount = "switchAccount";
   static const touchYourFingerprintSensor = "touchYourFingerprintSensor";
   static const usePinCode = "usePinCode";
+  static const home = "home";
+  static const history = "history";
+  static const account = "account";
+  static const help = "help";
   static const useFingerprintToAuthenticate = "useFingerprintToAuthenticate";
 }

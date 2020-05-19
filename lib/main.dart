@@ -5,6 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'localization/app_localization.dart';
 import 'route/app_route.dart';
 import 'style/theme.dart';
+import 'ui/mother_screen/mother_screen.dart';
 import 'ui/onboarding/on_boarding_flow.dart';
 import 'ui/onboarding/welcome_onboarding_page.dart';
 import 'ui/sign_in/welcome_back_screen.dart';
@@ -31,7 +32,7 @@ class TopbetaApp extends StatelessWidget {
       // routes: appRoute.routes,
       //navigatorObservers: [appRoute],
       // onGenerateRoute: appRoute.generateRoute,
-      home: Scaffold(body: WelcomeBackPage()),
+      home: MotherScreen(),
       localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,

@@ -27,5 +27,9 @@
   "switchAccount": "Switch Account",
   "useFingerprintToAuthenticate": "Use fingerprint to authenticate",
   "touchYourFingerprintSensor": "Touch your fingerprint sensor",
-  "usePinCode": "USE PIN CODE"
+  "usePinCode": "USE PIN CODE",
+  "home": "Home",
+  "history": "History",
+  "account": "Account",
+  "help": "Help"
 }

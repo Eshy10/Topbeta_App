@@ -16,8 +16,6 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
   void _showFingerPrintAuth() {
     showModalBottomSheet(
         context: context,
-        shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(top: Radius.circular(50))),
         builder: (context) {
           return FingerPrintAuthBottomSheet();
         });
