@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:topbeta/ui/help_page/help_header.dart';
+import 'package:topbeta/ui/home_page/home_body.dart';
 import '../../localization/localization_key.dart';
 import '../../ui/account_page/account_header.dart';
 import '../../ui/home_page/home_page_top.dart';
@@ -11,7 +12,7 @@ class MotherScreen extends StatelessWidget {
   final List<PageLayout> _pageLayouts = <PageLayout>[
     PageLayout(
       topChild: HomePageHeader(),
-      bodyChild: Container(),
+      bodyChild: HomePageBody(),
     ),
     PageLayout(
       topChild: TransactionHistoryHeader(),
@@ -20,6 +21,7 @@ class MotherScreen extends StatelessWidget {
     PageLayout(
       topChild: AccountPageHeader(),
       bodyChild: Container(),
+      flexSize: 2,
     ),
     PageLayout(
       topChild: HelpPageHeader(),

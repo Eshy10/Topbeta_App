@@ -6,7 +6,12 @@ import '../../utils/change_status_bar_to_light.dart';
 class PageLayout extends StatelessWidget {
   final Widget topChild;
   final Widget bodyChild;
-  const PageLayout({Key key, @required this.topChild, @required this.bodyChild})
+  final int flexSize;
+  const PageLayout(
+      {Key key,
+      @required this.topChild,
+      @required this.bodyChild,
+      this.flexSize = 6})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -16,11 +21,14 @@ class PageLayout extends StatelessWidget {
       backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         children: <Widget>[
-          IconTheme(
-            data: Theme.of(context).accentIconTheme,
-            child: topChild,
+          Expanded(
+            child: IconTheme(
+              data: Theme.of(context).accentIconTheme,
+              child: topChild,
+            ),
           ),
           Expanded(
+              flex: flexSize,
               child: Material(
                   elevation: 8,
                   shape: const RoundedRectangleBorder(

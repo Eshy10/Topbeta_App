@@ -7,31 +7,25 @@ class HomePageHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: horizontalPadding),
-      child: Column(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const SizedBox(height: 56),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Spacer(),
-              SizedBox(
-                height: 19,
-                width: 16,
-                child: TopBetaLogo(),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                appName,
-                style: Theme.of(context).accentTextTheme.bodyText2,
-              ),
-              const Spacer(),
-              IconButton(
-                icon: Icon(Icons.notifications),
-                onPressed: () {},
-              )
-            ],
+          const Spacer(),
+          SizedBox(
+            height: 19,
+            width: 16,
+            child: TopBetaLogo(),
           ),
-          const SizedBox(height: 27),
+          const SizedBox(width: 8),
+          Text(
+            appName,
+            style: Theme.of(context).accentTextTheme.bodyText2,
+          ),
+          const Spacer(),
+          IconButton(
+            icon: Icon(Icons.notifications),
+            onPressed: () {},
+          )
         ],
       ),
     );
