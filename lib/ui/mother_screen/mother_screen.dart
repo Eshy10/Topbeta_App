@@ -1,27 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:topbeta/localization/localization_key.dart';
-import 'package:topbeta/ui/home_page/home_page_top.dart';
-import 'package:topbeta/ui/shared/page_layout.dart';
-import 'package:topbeta/ui/shared/topbeta_text_logo.dart';
-import 'package:topbeta/ui/transaction_history/transaction_history_top.dart';
+import 'package:topbeta/ui/help_page/help_header.dart';
+import '../../localization/localization_key.dart';
+import '../../ui/account_page/account_header.dart';
+import '../../ui/home_page/home_page_top.dart';
+import '../../ui/shared/page_layout.dart';
+import '../../ui/transaction_history/transaction_history_top.dart';
 
 class MotherScreen extends StatelessWidget {
   final ValueNotifier<int> _pageIndexNotifier = ValueNotifier<int>(0);
   final List<PageLayout> _pageLayouts = <PageLayout>[
     PageLayout(
-      topChild: HomePageTop(),
+      topChild: HomePageHeader(),
       bodyChild: Container(),
     ),
     PageLayout(
-      topChild: TransactionHistoryTop(),
+      topChild: TransactionHistoryHeader(),
       bodyChild: Container(),
     ),
     PageLayout(
-      topChild: Container(),
+      topChild: AccountPageHeader(),
       bodyChild: Container(),
     ),
     PageLayout(
-      topChild: Container(),
+      topChild: HelpPageHeader(),
       bodyChild: Container(),
     ),
   ];

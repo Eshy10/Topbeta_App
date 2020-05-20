@@ -16,6 +16,8 @@ ThemeData _topbetaTheme() {
       splashFactory: InkRipple.splashFactory,
       disabledColor: disabledColor,
       backgroundColor: backgroundColor,
+      canvasColor: canvasColor,
+      primaryColorDark: primaryColorDark,
       scaffoldBackgroundColor: scaffoldBackgroundColor,
       bottomSheetTheme: const BottomSheetThemeData(
         elevation: 12,

@@ -16,7 +16,8 @@ class PageLayout extends StatelessWidget {
       backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         children: <Widget>[
-          Container(
+          IconTheme(
+            data: Theme.of(context).accentIconTheme,
             child: topChild,
           ),
           Expanded(
