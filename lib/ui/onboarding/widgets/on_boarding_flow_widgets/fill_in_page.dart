@@ -103,7 +103,7 @@ class TopBetaTextInput extends StatelessWidget {
         const SizedBox(
           height: 11,
         ),
-        textFormField
+        Container(height: 40, child: textFormField)
       ],
     );
   }

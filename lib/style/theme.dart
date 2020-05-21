@@ -19,14 +19,32 @@ ThemeData _topbetaTheme() {
       canvasColor: canvasColor,
       primaryColorDark: primaryColorDark,
       scaffoldBackgroundColor: scaffoldBackgroundColor,
+      chipTheme: ChipThemeData(
+          padding: const EdgeInsets.only(top: 0),
+          backgroundColor: whiteColor,
+          disabledColor: disabledColor,
+          selectedColor: primaryColor,
+          secondarySelectedColor: secondaryColor,
+          labelPadding: const EdgeInsets.symmetric(vertical: 3, horizontal: 17),
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: disabledColor),
+            borderRadius: BorderRadius.circular(5),
+          ),
+          labelStyle: TextStyle(
+            color: primaryColor,
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
+            fontStyle: FontStyle.normal,
+            fontFamily: 'Avenir',
+          ),
+          secondaryLabelStyle: const TextStyle(),
+          brightness: Brightness.light),
       bottomSheetTheme: const BottomSheetThemeData(
         elevation: 12,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(50))),
       ),
       buttonTheme: ButtonThemeData(
-          height: 48,
-          minWidth: 306,
           buttonColor: primaryColor,
           colorScheme: colorScheme,
           textTheme: ButtonTextTheme.primary,
@@ -35,6 +53,7 @@ ThemeData _topbetaTheme() {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))));
   return base.copyWith(
       inputDecorationTheme: InputDecorationTheme(
+          contentPadding: const EdgeInsets.only(top: 8, left: 13),
           hintStyle: _buildTextTheme(base.textTheme).bodyText2.copyWith(
               fontWeight: FontWeight.w300, fontSize: 16, color: hintTextColor),
           border: OutlineInputBorder(
@@ -105,12 +124,18 @@ TextTheme _buildTextTheme(TextTheme base) {
             fontWeight: FontWeight.w500,
             fontSize: 15,
           ),
+          caption: base.caption.copyWith(
+            fontStyle: FontStyle.normal,
+            fontWeight: FontWeight.normal,
+            fontSize: 16,
+            color: captionColor,
+          ),
           button: base.button.copyWith(
             fontStyle: FontStyle.normal,
             fontWeight: FontWeight.w800,
             fontSize: 16,
           ))
       .apply(
-        fontFamily: 'SourceSerifPro',
+        fontFamily: 'Avenir',
       );
 }

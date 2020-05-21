@@ -31,6 +31,8 @@ dependencies:
   google_fonts: ^1.1.0
   provider: ^4.1.2
   pinput: ^0.2.4
+  country_list_pick: ^1.0.0+2
+
 
 
 

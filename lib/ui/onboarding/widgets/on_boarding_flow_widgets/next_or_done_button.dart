@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:topbeta/ui/shared/top_beta_base_button.dart';
 
 class NextOrDoneButton extends StatelessWidget {
   @override
@@ -6,9 +7,11 @@ class NextOrDoneButton extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        RaisedButton(
-          onPressed: () {},
-          child: const Text("Next"),
+        TopbetaBaseButton(
+          child: RaisedButton(
+            onPressed: () {},
+            child: const Text("Next"),
+          ),
         ),
       ],
     );

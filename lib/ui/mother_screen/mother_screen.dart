@@ -1,31 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:topbeta/ui/account_page/account_page_body.dart';
+import 'package:topbeta/ui/help_page/hel_page_body.dart';
 import 'package:topbeta/ui/help_page/help_header.dart';
 import 'package:topbeta/ui/home_page/home_body.dart';
+import 'package:topbeta/ui/transaction_history/transactionPageBody.dart';
 import '../../localization/localization_key.dart';
 import '../../ui/account_page/account_header.dart';
 import '../../ui/home_page/home_page_top.dart';
-import '../../ui/shared/page_layout.dart';
+import 'page_layout.dart';
 import '../../ui/transaction_history/transaction_history_top.dart';
 
 class MotherScreen extends StatelessWidget {
   final ValueNotifier<int> _pageIndexNotifier = ValueNotifier<int>(0);
-  final List<PageLayout> _pageLayouts = <PageLayout>[
-    PageLayout(
+  final List<BasePageLayout> _pageLayouts = <BasePageLayout>[
+    BasePageLayout(
       topChild: HomePageHeader(),
       bodyChild: HomePageBody(),
     ),
-    PageLayout(
+    BasePageLayout(
       topChild: TransactionHistoryHeader(),
-      bodyChild: Container(),
+      bodyChild: TransactionPageBody(),
     ),
-    PageLayout(
+    BasePageLayout(
       topChild: AccountPageHeader(),
-      bodyChild: Container(),
+      bodyChild: AccountPageBody(),
       flexSize: 2,
     ),
-    PageLayout(
+    BasePageLayout(
       topChild: HelpPageHeader(),
-      bodyChild: Container(),
+      bodyChild: HelpPageBody(),
     ),
   ];
   @override

@@ -14,3 +14,4 @@ const Color heading3Color = heading5Color;
 const Color errorColor = Color(0xFFD80027);
 const Color hintTextColor = Color(0xFFE3E3E3);
 const Color showPinColor = Color(0xFF0F52BA);
+const Color captionColor = Color(0xFFC4C4C4);

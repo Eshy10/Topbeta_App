@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:topbeta/localization/localization_key.dart';
 import 'package:topbeta/ui/shared/pin_code_input.dart';
+import 'package:topbeta/ui/shared/top_beta_base_button.dart';
 import 'package:topbeta/ui/shared/topbeta_text_logo.dart';
 import 'package:topbeta/ui/sign_in/widgets/finger_print_auth.dart';
 import 'package:topbeta/utils/constants.dart';
@@ -94,11 +95,13 @@ class _WelcomeBackPageState extends State<WelcomeBackPage> {
             const SizedBox(
               height: 27,
             ),
-            RaisedButton(
-              onPressed: () {
-                _showFingerPrintAuth();
-              },
-              child: Text(LocalizedText.login.localized(context)),
+            TopbetaBaseButton(
+              child: RaisedButton(
+                onPressed: () {
+                  _showFingerPrintAuth();
+                },
+                child: Text(LocalizedText.login.localized(context)),
+              ),
             ),
             const SizedBox(
               height: buttonBottomSpace,

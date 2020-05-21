@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:topbeta/ui/shared/top_beta_base_button.dart';
+
+import 'widgets/airtime_page_widget.dart';
+import 'widgets/data_page_widget.dart';
 
 //Todo localized text here
 class HomePageBody extends StatelessWidget {
@@ -29,10 +33,22 @@ class HomePageBody extends StatelessWidget {
             ),
             Expanded(
               child: TabBarView(children: [
-                Container(),
-                Container(),
+                AirtimePageWidget(),
+                DataPageWidget(),
               ]),
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                TopbetaBaseButton(
+                  child: RaisedButton(
+                    onPressed: () {},
+                    child: Text("Recharge"),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 36),
           ],
         ),
       ),
